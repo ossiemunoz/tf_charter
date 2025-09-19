@@ -1,0 +1,44 @@
+{
+  // Usa latexmk para compilar PDF
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk 🔄",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=build",
+        "%DOC%"
+      ]
+    }
+  ],
+
+  // Carpeta donde van los temporales y el PDF
+  "latex-workshop.latex.outDir": "build",
+
+  // Visualizador del PDF en una pestaña de VS Code
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  // Opcional: limpiar temporales cuando cierres el proyecto
+  "latex-workshop.latex.clean.enabled": true,
+  "latex-workshop.latex.clean.subfolderOutDir": true,
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.fdb_latexmk",
+    "*.fls",
+    "*.log",
+    "*.out",
+    "*.synctex.gz",
+    "*.toc"
+  ]
+}
