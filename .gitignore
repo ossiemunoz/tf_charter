@@ -1,0 +1,37 @@
+# LaTeX aux files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+
+# VS Code LaTeX Workshop out dir
+build/
+
+# Herramientas LaTeX comunes (opcional)
+_minted*/
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.glg
+*.glo
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+*.glsdefs
+*.thm
+
+# Mac/Windows ruido
+.DS_Store
+Thumbs.db
